@@ -16,3 +16,4 @@ qdrant-client==1.9.1
 transformers==4.30.2
 langchain-anthropic
 langchain-openai
+langchain_groq
