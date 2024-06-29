@@ -226,12 +226,12 @@ Answer:
         setup_and_retrieval = RunnableParallel(
             {"context": retriever, "question": RunnablePassthrough()})
 
-        if selected_model == "OpenAI":
-            model = ChatOpenAI(openai_api_key=openai_api_key, model_name='gpt-3.5-turbo', temperature=0)
-        elif selected_model == "Google Gemini":
+        if selected_model == "Google Gemini":
             model = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.3, google_api_key=google_api_key)
         elif selected_model == "ChatGroq":
             model = ChatGroq(api_key=groq_api_key, model_name="Llama3-8b-8192")
+        elif selected_model == "OpenAI":
+            model = ChatOpenAI(openai_api_key=openai_api_key, model_name='gpt-3.5-turbo', temperature=0)
         elif selected_model == "Claude-2.1":
             model = ChatAnthropic(api_key=ANTHROPIC_API_KEY ,model="claude-2.1", temperature=0, max_tokens=1024)
         else:
