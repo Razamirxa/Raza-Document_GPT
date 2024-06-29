@@ -115,7 +115,7 @@ def main():
             st.info("Please add your API keys to continue.")
             st.stop()
 
-        model_choice = st.radio("Select the model to use", ("OpenAI", "Google Gemini", "ChatGroq", "Claude-2.1"))
+        model_choice = st.radio("Select the model to use", ("Google Gemini", "ChatGroq", "OpenAI","Claude-2.1"))
         st.session_state.selected_model = model_choice
 
         process = st.button("Process")
