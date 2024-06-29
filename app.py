@@ -85,7 +85,7 @@ def main():
     load_dotenv()
 
     st.markdown("<h1 style='text-align: center; color: #0073e6;'>Elevate Your Document Experience with RAG GPT and Conversational AI</h1>", unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: center; color: #0073e6;'>Upload Your File Select your Model and ask any Question from file</h3>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center; color: #0073e6;'>Upload Your File Select your Model and ask any Question from file</h4>", unsafe_allow_html=True)
 
 
     if "conversation" not in st.session_state:
