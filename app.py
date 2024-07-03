@@ -222,7 +222,7 @@ Context:<{context}>
 Answer:
     """
         prompt = ChatPromptTemplate.from_template(template)
-        retriever = vector_db.as_retriever(search_type="similarity", search_kwargs={"k": 1})
+        retriever = vector_db.as_retriever(search_type="similarity", search_kwargs={"k": 5})
         setup_and_retrieval = RunnableParallel(
             {"context": retriever, "question": RunnablePassthrough()})
 
